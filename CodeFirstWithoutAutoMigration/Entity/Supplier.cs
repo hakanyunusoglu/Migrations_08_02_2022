@@ -5,13 +5,12 @@ using System.Web;
 
 namespace CodeFirstWithoutAutoMigration.Entity
 {
-    public class Category
+    public class Supplier
     {
-        public int CategoryID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public int SupplierID { get; set; }
+        public string CompanyName { get; set; }
+        public string ContactName { get; set; }
 
         ICollection<Product> Product { get; set; }
-
     }
 }

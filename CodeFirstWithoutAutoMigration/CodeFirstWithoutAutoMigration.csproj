@@ -102,9 +102,40 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Entity\Category.cs" />
     <Compile Include="Entity\DatabaseContext.cs" />
+    <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\Supplier.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202080713386_EkleCategoryTable.cs" />
+    <Compile Include="Migrations\202202080713386_EkleCategoryTable.designer.cs">
+      <DependentUpon>202202080713386_EkleCategoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202080720465_EkleProductTable.cs" />
+    <Compile Include="Migrations\202202080720465_EkleProductTable.designer.cs">
+      <DependentUpon>202202080720465_EkleProductTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202080727354_RelationShipBetweenProductandCategory.cs" />
+    <Compile Include="Migrations\202202080727354_RelationShipBetweenProductandCategory.designer.cs">
+      <DependentUpon>202202080727354_RelationShipBetweenProductandCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202080730087_EkleSupplierTable.cs" />
+    <Compile Include="Migrations\202202080730087_EkleSupplierTable.designer.cs">
+      <DependentUpon>202202080730087_EkleSupplierTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202080732147_RelationShipBetweenProductandSupplier.cs" />
+    <Compile Include="Migrations\202202080732147_RelationShipBetweenProductandSupplier.designer.cs">
+      <DependentUpon>202202080732147_RelationShipBetweenProductandSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202080802445_ChangeCategoryNameColumn.cs" />
+    <Compile Include="Migrations\202202080802445_ChangeCategoryNameColumn.designer.cs">
+      <DependentUpon>202202080802445_ChangeCategoryNameColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202080807477_ChangeCategoryNameColumnAgain.cs" />
+    <Compile Include="Migrations\202202080807477_ChangeCategoryNameColumnAgain.designer.cs">
+      <DependentUpon>202202080807477_ChangeCategoryNameColumnAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +152,29 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202202080713386_EkleCategoryTable.resx">
+      <DependentUpon>202202080713386_EkleCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202080720465_EkleProductTable.resx">
+      <DependentUpon>202202080720465_EkleProductTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202080727354_RelationShipBetweenProductandCategory.resx">
+      <DependentUpon>202202080727354_RelationShipBetweenProductandCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202080730087_EkleSupplierTable.resx">
+      <DependentUpon>202202080730087_EkleSupplierTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202080732147_RelationShipBetweenProductandSupplier.resx">
+      <DependentUpon>202202080732147_RelationShipBetweenProductandSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202080802445_ChangeCategoryNameColumn.resx">
+      <DependentUpon>202202080802445_ChangeCategoryNameColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202080807477_ChangeCategoryNameColumnAgain.resx">
+      <DependentUpon>202202080807477_ChangeCategoryNameColumnAgain.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
