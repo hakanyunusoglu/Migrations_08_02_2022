@@ -11,5 +11,8 @@ namespace Automigrations.Entity
         public string ProductName { get; set; }
         public int UnitPrice { get; set; }
         public int QuantityPerUnit { get; set; }
+
+        public Category Category { get; set; }
+        public Supplier Supplier { get; set; }
     }
 }

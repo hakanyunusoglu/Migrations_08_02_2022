@@ -1,5 +1,6 @@
 ﻿namespace Automigrations.Migrations
 {
+    using Automigrations.Entity;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -18,6 +19,10 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
+            context.Categories.AddOrUpdate(new Category() { 
+             CategoryName="Donanım",
+             Description="Donanım ürünü"
+            }); 
         }
     }
 }
